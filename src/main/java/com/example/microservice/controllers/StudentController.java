@@ -18,7 +18,7 @@ public class StudentController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.FOUND)
-    public ResponseEntity<?> getStudent(@PathVariable Long id) {
+    public ResponseEntity<?> getStudentById(@PathVariable Long id) {
         return studentService.getStudentById(id);
     }
 
